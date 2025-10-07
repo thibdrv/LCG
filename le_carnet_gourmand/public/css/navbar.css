@@ -1,0 +1,111 @@
+:root {
+  --main-bg: #272727;       /* couleur principale */
+  --main-accent: #ffc107;   /* accent (jaune) */
+  --main-text: #fff;        /* texte par défaut */
+  --btn-green: #4caf50;
+  --btn-green-hover: #45a049;
+  --btn-red: #ff5c5c;
+  --btn-red-hover: #ff3030;
+}
+
+/* --- Reset rapide --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* --- Header / Navbar container --- */
+#header {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  display: flex;
+  justify-content: space-between; /* h1 à gauche / nav + login à droite */
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed; /* reste toujours visible */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+/* --- Titre à gauche --- */
+#header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-accent);
+}
+
+/* --- Navigation --- */
+.navbar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--main-text);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: #555;
+}
+
+/* --- Zone login/logout dynamique --- */
+#loginArea {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#loginArea .user-info {
+  font-style: italic;
+  margin-right: 10px;
+  color: var(--main-accent);
+  font-weight: bold;
+}
+
+/* --- Boutons login/logout --- */
+.logout-btn, 
+.login-btn {
+  color: white !important;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-btn {
+  background: var(--btn-green);
+}
+
+.login-btn:hover {
+  background: var(--btn-green-hover);
+}
+
+.logout-btn {
+  background: var(--btn-red);
+}
+
+.logout-btn:hover {
+  background: var(--btn-red-hover);
+}
+
+/* --- Contenu principal --- */
+#main {
+  margin-top: 70px; /* éviter que le contenu passe sous la navbar */
+  padding: 20px;
+}

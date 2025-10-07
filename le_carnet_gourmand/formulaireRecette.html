@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer une recette</title>
+  <link rel="stylesheet" href="public/css/formulaireRecette.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Partagez une nouvelle recette</h2>
+
+    <form id="formRecette">
+      <input type="hidden" name="route" value="Recette">
+
+      <label for="nom">Nom de la recette :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="ingredients">Ingrédients :</label>
+      <textarea id="ingredients" name="ingredients" required></textarea>
+
+      <label for="details">Préparation / détails :</label>
+      <textarea id="details" name="details" required></textarea>
+
+      <label for="image">Image (URL) :</label>
+      <input type="url" id="image" name="image">
+
+      <label for="lien">Lien vidéo :</label>
+      <input type="url" id="lien" name="lien">
+
+      <!-- ✅ Select qui sera rempli dynamiquement -->
+      <label for="categorie">Catégorie :</label>
+      <select id="categorie" name="fk_categorie" required>
+        <option value="">Chargement...</option>
+      </select>
+
+      <button type="submit">Publier</button>
+    </form>
+  </div>
+
+  <!-- JS externe -->
+  <script type="module" src="public/js/formulaireRecette.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+:root {
+    --main-bg: #272727;   /* couleur principale */
+    --main-accent: #ffc107; /* accent (jaune) */
+    --main-text: #fff; /* texte par défaut */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+footer {
+    background-color: var(--main-bg); /* couleur de fond */
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section a {
+    color: var(--main-text); /* texte blanc (hérite de la couleur globale) */
+    text-decoration: none;   /* enlève le soulignement */
+}
+
+/* Bouton retour en haut */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--main-accent);
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none; /* visible via JS quand on scroll */
+    transition: background 0.3s;
+}
+.back-to-top:hover {
+    background-color: var(--main-accent);
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* espace égal entre les colonnes */
+    flex-wrap: wrap; /* passe en colonne si écran petit */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Chaque section */
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* largeur mini pour éviter que ça se compresse trop */
+    margin: 10px;
+}
+
+.footer-section h2,
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+    color: var(--main-accent);
+}
+
+/* Icônes réseaux sociaux */
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2 colonnes */
+    gap: 15px 30px; /* espace vertical et horizontal */
+    justify-content: center; /* centre les icônes */
+    list-style: none;
+    padding: 0;
+}
+
+
+.social-icons li a img {
+    transition: transform 0.3s;
+}
+.social-icons li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Bas du footer */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+.footer-bottom a {
+    color: var(--main-accent);
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

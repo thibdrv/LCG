@@ -1,0 +1,36 @@
+/* 🔹 On enlève le style par défaut du lien */
+a.accueil-link .accueil-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+a.accueil-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* permet de prendre toute la largeur */
+}
+
+/* 🔹 Style de la carte */
+a.accueil-link .accueil-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+/* 🔹 Effet au survol */
+a.accueil-link .accueil-section:hover {
+  background: #f1f1f1;
+  transform: scale(1.02);
+}
+
+#myModal {
+    overflow: hidden;
+    top: 55px;
+    position: relative;
+    left: 6%;
+}
