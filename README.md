@@ -1,8 +1,8 @@
-### Le carnet gourmand
+# Le carnet gourmand
 
 Projet web full-stack développé dans un objectif d'apprentissage. Bien que non terminé, ce projet m'a permis de pratiquer la conception d'architecture logicielle et la mise en place de tests automatisés.
 
-# Ce que ce projet m'a apporté :
+# Ce que ce projet m'a apporté : #
 - Architecture full-stack : Structuration propre de l'application avec une séparation claire entre le frontend et le backend.
 - Culture du test : Écriture de tests unitaires et d'intégration pour sécuriser le code et valider la logique métier.
 - Bonnes pratiques : Organisation des dossiers, gestion des données et découpage des composants.
