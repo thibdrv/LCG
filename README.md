@@ -1,4 +1,4 @@
-# Le carnet gourmand
+### Le carnet gourmand
 
 Projet web full-stack développé dans un objectif d'apprentissage. Bien que non terminé, ce projet m'a permis de pratiquer la conception d'architecture logicielle et la mise en place de tests automatisés.
 
@@ -13,7 +13,7 @@ Projet web full-stack développé dans un objectif d'apprentissage. Bien que non
 - Gestion des erreurs : Intercepter et traiter proprement les erreurs réseau et les cas limites côté client.
 
 # Technologies utilisées :
-Frontend : HTML / CSS / JavaScript
-Backend : PHP
-Tests : Postman
-Base de données : MariaDB
+- Frontend : HTML / CSS / JavaScript
+- Backend : PHP
+- Tests : Postman
+- Base de données : MariaDB
