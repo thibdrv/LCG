@@ -1,5 +1,7 @@
 # Le carnet gourmand
 
+Jira / trello
+
 Projet web full-stack développé dans un objectif d'apprentissage. Bien que non terminé, ce projet m'a permis de pratiquer la conception d'architecture logicielle et la mise en place de tests automatisés.
 
 ### Ce que ce projet m'a apporté : 
