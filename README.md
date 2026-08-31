@@ -2,7 +2,7 @@
 
 Methode trello
 
-Projet web full-stack développé dans un objectif d'apprentissage. Bien que non terminé, ce projet m'a permis de pratiquer la conception d'architecture logicielle et la mise en place de tests automatisés.
+Projet web full-stack développé dans un objectif d'apprentissage. Bien que non terminé, ce projet m'a permis de pratiquer la conception d'architecture logicielle, la mise en place de tests automatisés et l'organisation du développement via un suivi Kanban sur Trello
 
 ### Ce que ce projet m'a apporté : 
 - Architecture full-stack : Structuration propre de l'application avec une séparation claire entre le frontend et le backend.
