@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Carnet Gourmand — Partage de recettes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+</head>
+<body>
+
+<header>
+  <div id="header-bar">
+    <p class="brand">Le Carnet <span>Gourmand</span></p>
+    <button id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="navbar" id="navbar"></nav>
+  </div>
+</header>
+
+<div class="modal-overlay" id="myModal" style="display:none;" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="closeLogin" aria-label="Fermer">&times;</button>
+    <div id="modalFormContainer"></div>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<footer>
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">⬆</button>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>À propos</h3>
+      <p>Le Carnet Gourmand</p>
+      <p>📍 Normandie</p>
+      <p>@ <a href="mailto:contact@lecarnetgourmand.fr">contact@lecarnetgourmand.fr</a></p>
+      <p>📞 <a href="tel:0616337609">06 16 33 76 09</a></p>
+    </div>
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#" id="footerAccueil">Accueil</a></li>
+        <li><a href="#" id="footerRecettes">Recettes</a></li>
+        <li><a href="#" id="footerPartager">Partager une recette</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Suivez-nous</h3>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">📘</a></li>
+        <li><a href="https://www.youtube.com/@Lecarnetgourmand" target="_blank" rel="noopener" aria-label="YouTube">▶️</a></li>
+        <li><a href="https://www.instagram.com/le_carnet_gourmand/" target="_blank" rel="noopener" aria-label="Instagram">📷</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="currentYear">2025</span> - Le Carnet Gourmand. Tous droits réservés.</p>
+    <p>Site créé avec le 🧡 & <a href="https://www.hgdeveloppement.fr" target="_blank" rel="noopener">HG Développement</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+
+    <script type="module" src="public/js/script.js"></script>
+
+    
+
+</body>
+</html>
