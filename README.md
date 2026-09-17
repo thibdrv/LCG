@@ -113,8 +113,15 @@ Toutes les communications avec le backend passent par une fonction unique, **`my
 
 1. `compte.js` (`doLogin()`) ouvre une modale avec un formulaire email / mot de passe.
 2. À la soumission, un `POST` est envoyé vers `api.php` avec `route=Login`.
-3. `LoginPostController` vérifie les identifiants via `CompteService`, initialise la session (`SessionManager::login()`) et stocke les informations utilisateur nécessaires en session (pseudo, email, rôle — **jamais le mot de passe**).
+3. `LoginPostController` vérifie les identifiants via `CompteService`, initialise la session (`SessionManager::login()`) et stocke les informations utilisateur nécessaires en session (pseudo, email, rôle **jamais le mot de passe**).
 4. La navbar se rafraîchit automatiquement (`script.js`) en interrogeant `SessionGetController` pour afficher l'état de connexion courant.
+
+### Identifiants de test
+
+Si vous souhaitez vous connecter, un compte de test est disponible :
+
+* **Email :** ceci@estuntest.fr
+* **Mot de passe :** AZERTYUIOPazertyuiop!
 
 ### Création de compte
 
@@ -136,7 +143,7 @@ Toutes les communications avec le backend passent par une fonction unique, **`my
 
 ```bash
 # Cloner le dépôt
-git clone <url-du-repo>
+git clone <https://github.com/thibdrv/LCG>
 
 # Configurer la base de données
 # (importer le schéma SQL, configurer les identifiants de connexion)
